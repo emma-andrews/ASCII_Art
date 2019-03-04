@@ -12,7 +12,7 @@ height = im.size[0];
 maxwidth = 60;
 maxheight = 60;
 ratio = min(maxwidth / width, maxheight / height);
-im = im.resize((int(width*ratio), int(height*ratio)), Image.ANTIALIAS)
+im = im.resize((int(height*ratio), int(width*ratio)), Image.ANTIALIAS)
 
 data = numpy.asarray(im)
 brightness = numpy.zeros([im.size[1], im.size[0]])
